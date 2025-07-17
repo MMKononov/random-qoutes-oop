@@ -1,6 +1,6 @@
-import quotes from './data/quotes.js';
-import { generateRandomInt } from './utils/math.js';
-import Quote from './Quote.js';
+import quotes from "../data/quotes.js";
+import { generateRandomInt } from "../utils/math.js";
+import Quote from "./Quote.js";
 
 class RandomQuote {
   static getRandomQuote() {
