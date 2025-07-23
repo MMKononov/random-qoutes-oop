@@ -1,9 +1,7 @@
 :root {
-  --bg-color: #121212; /* фон страницы */
-  --card-bg: #1e1e1e; /* фон карточек */
-  --text-color: #e0e0e0; /* основной текст */
-  --accent: #f8bf15; /* цвет кнопки */
-  --accent-hover: #be8b0c; /* кнопка при наведении */
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --text-color: #e0e0e0;
 }
 
 * {
@@ -40,20 +38,40 @@ button {
   border: none;
 }
 
+.btn-primary {
+  --accent: #f8bf15;
+  --accent-hover: #be8b0c;
+  --text-color: #e0e0e0;
+}
+
+.btn-secondary {
+  --accent: #28a745;
+  --accent-hover: #1e7e34;
+  --text-color: #e0e0e0;
+}
+
 .btn {
   padding: 12px 24px;
   font-size: 16px;
   border-radius: 10px;
+  margin: 5px;
 }
 
 .btn:not(.btn-danger) {
   background-color: var(--accent);
   color: #000;
+  box-shadow: 0 0 10px var(--accent-hover);
 }
 
 .btn:not(.btn-danger):active {
   background-color: var(--accent-hover);
   transform: translateY(2px);
+}
+
+.btn:not(.btn-danger):hover {
+  background-color: var(--accent-hover);
+  color: black;
+  box-shadow: 0 0 5px 1px var(--accent-hover);
 }
 
 .btn.btn-danger {
